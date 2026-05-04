@@ -88,19 +88,17 @@ public:
     void print()
     {
         cout << "=== Employee Buh Medeelel ===" << endl;
-        cout << left << setw(12) << "Name = " << getName()
-             << left << setw(12) << "SSNum = " << getSsnum()
-             << left << setw(12) << "Age = " << getAge() 
-             << left << setw(12) << "CompanyID = " << CompanyID
-             << left << setw(12) << "Title = " << Title
-             << left << setw(12) << "StartDate = " << StartDate << endl;
+        cout << left << setw(18) << "Name = "      << getName()   << "\n"
+             << left << setw(18) << "SSNum = "     << getSsnum()  << "\n"
+             << left << setw(18) << "Age = "       << getAge()    << "\n"
+             << left << setw(18) << "CompanyID = " << CompanyID   << "\n"
+             << left << setw(18) << "Title = "     << Title       << "\n"
+             << left << setw(18) << "StartDate = " << StartDate   << "\n";
 
-        cout << "=== Division ===\n"
-             << endl;
+        cout << "\n=== Division ===" << endl;
         cout << "DivisionName = " << division->getDivisionName() << endl;
 
-        cout << "=== Job Description ===\n"
-             << endl;
+        cout << "\n=== Job Description ===" << endl;
         for (int i = 0; i < description.size(); i++)
         {
             cout << "Description " << i + 1 << " = " << description[i].getDescription() << endl;
@@ -108,32 +106,29 @@ public:
 
         if (spouse != nullptr)
         {
-            cout << "=== Spouse ===\n"
-                 << endl;
-            cout << left << setw(12) << "Name = " << spouse->getName()
-                 << left << setw(12) << "SSNum = " << spouse->getSsnum()
-                 << left << setw(12) << "Age = " << spouse->getAge()
-                 << left << setw(12) << "AnniversaryDate = " << spouse->getAnniversaryDate() << endl;
+            cout << "\n=== Spouse ===" << endl;
+            cout << left << setw(22) << "Name = "             << spouse->getName()             << "\n"
+                 << left << setw(22) << "SSNum = "            << spouse->getSsnum()            << "\n"
+                 << left << setw(22) << "Age = "              << spouse->getAge()              << "\n"
+                 << left << setw(22) << "AnniversaryDate = "  << spouse->getAnniversaryDate()  << "\n";
         }
-
         else
         {
             cout << "Haven't Spouse" << endl;
         }
 
-        cout << "=== Children ===\n"
-             << endl;
+        cout << "\n=== Children ===" << endl;
         if (!children.empty())
         {
             for (int i = 0; i < children.size(); i++)
             {
-                cout << left << setw(12) << "Name = " << children[i].getName()
-                     << left << setw(12) << "SSNum = " << children[i].getSsnum()
-                     << left << setw(12) << "Age = " << children[i].getAge()
-                     << left << setw(12) << "FavoriteToy = " << children[i].getFavoriteToy() << endl;
+                if (i > 0) cout << "  ---\n";
+                cout << left << setw(18) << "Name = "        << children[i].getName()        << "\n"
+                     << left << setw(18) << "SSNum = "       << children[i].getSsnum()       << "\n"
+                     << left << setw(18) << "Age = "         << children[i].getAge()         << "\n"
+                     << left << setw(18) << "FavoriteToy = " << children[i].getFavoriteToy() << "\n";
             }
         }
-
         else
         {
             cout << "Haven't Children" << endl;
