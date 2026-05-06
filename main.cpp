@@ -15,7 +15,7 @@ int main(){
 
     Employee e1 , e2 ;
     e1.setName("Andrew") ; 
-    e1.setSsnum("1959") ; 
+    e1.setSsnum("SSNUM-1959") ; 
     e1.setAge(30) ;
     e1.setCompanyID("TECH001") ;
     e1.setTitle("Software Engineer") ;
@@ -24,7 +24,7 @@ int main(){
     e1.addJobDescription(j1) ;
 
     e2.setName("William") ;
-    e2.setSsnum("1960") ;
+    e2.setSsnum("SSNUM-1960") ;
     e2.setAge(28) ;
     e2.setCompanyID("TECH002") ;
     e2.setTitle("HR Manager") ;
@@ -36,29 +36,29 @@ int main(){
 
     Spouse s1 , s2 ;
     s1.setName("Emily") ;
-    s1.setSsnum("2024") ;
+    s1.setSsnum("SSNUM-2024") ;
     s1.setAge(29) ;
     s1.setAnniversaryDate("2022-09-10") ;
 
     s2.setName("Olivia") ;
-    s2.setSsnum("2567") ;
+    s2.setSsnum("SSNUM-2567") ;
     s2.setAge(27) ;
     s2.setAnniversaryDate("2023-11-20") ;
 
 
     Child c1 , c2 , c3 ;
     c1.setName("Sophia") ;
-    c1.setSsnum("3001") ;
+    c1.setSsnum("SSNUM-3001") ;
     c1.setAge(5) ;
     c1.setFavoriteToy("Barbie") ; 
 
     c2.setName("Alexander") ;
-    c2.setSsnum("3002") ;
+    c2.setSsnum("SSNUM-3002") ;
     c2.setAge(8) ;
     c2.setFavoriteToy("Lego") ;
 
     c3.setName("Emma") ;
-    c3.setSsnum("3003") ;
+    c3.setSsnum("SSNUM-3003") ;
     c3.setAge(3) ;
     c3.setFavoriteToy("Teddy Bear") ;
 
